@@ -3,21 +3,16 @@ Orbital Gemini
 
 Project Idea:
 
-To play an arcade simulated game wirelessly from a separate computer.
+To play an arcade like game on your computer
 
 Features:
-Physical features:
-Player’s computer which allows player to wirelessly connect to a separate computer running the game 
-The separate computer is connected to the Ev3 brick through bluetooth to play the arcade game 
-The arcade game is a simple car game that sends a video back to the player’s computer. The player would only have one function to stop the claw at the desired spot. 
 
-Software features:
 Game contains a log in and registration page
 A top up credits page used to play the physical claw game (no real monetary top up would be used)
 A record of the prizes won : big and small prize the former being of harder difficulty 
 A button to play the game itself
-A button to connect to the claw laptop
-Only one user can be connected any one time
+The game is like a claw machine where there is only one button
+When the car moves to the correct spot, press the space bar or left most click to aim for the winning surface. 
 
 Design your System:
 The system design is a simple green and purple scheme
@@ -60,3 +55,20 @@ The socket conneciton was very difficult as different website had different sock
 Initially the ev3 brick was meant to be codded in python using micropython created by the ev3dev team. Although it can be codded, inputs could not be sent to the programme or we could not find a way to send it. After awhile we read up and decided to use ch c C/C++ an intepreter on a linux os so that we can send inputs to our ev3 brick on when to stop the car to hit the "target".
 the lego build for our car was also tricky as we wanted a 4 wheel drive but after realising that with four wheels the movements might have a larger error margin, preventing the car from starting of at the same position, we decided to use a 3 wheel drive where it would be easier.
 To make the game more skill based, we have also decided to randomise the speed of the car so it depends if player can time the button better to be more accurate. 
+
+**Due to the problems we decided to scrap the Hardware and change it to a digital game**
+
+Revamp:
+A similar game has been created digitlaly using pygame module
+The code interacts with the sql database changing the players prizes
+
+**Features Developed in Milestone 3:**
+
+1. Created the Game which works and just has a simple button. The movement of the car is also random making it more skill based
+2. Interacted the game with our preexisiting gui so that it runs smoothly 
+
+**Potential Features to develop**
+1. Putting the server online so that everyone can access the game and challenge each other 
+2. Allowing users to convert their winning to cutomisations available
+
+
