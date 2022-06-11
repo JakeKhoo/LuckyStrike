@@ -8,8 +8,8 @@ To play an arcade like game on your computer
 Features:
 
 Game contains a log in and registration page
-A top up credits page used to play the physical claw game (no real monetary top up would be used)
-A record of the prizes won : big and small prize the former being of harder difficulty 
+A top up credits page used to play the physical claw game 
+A record of the prizes won : big and small prize with different difficulties
 A button to play the game itself
 The game is like a claw machine where there is only one button
 When the car moves to the correct spot, press the space bar or left most click to aim for the winning surface. 
@@ -39,36 +39,10 @@ See the file
 
 Core features Developed:
 
-The UI has been finishe using tkinter as the module.
+The UI uses tkinter as the GUI
 The UI has been fully linked to the SQL data base showing how many coins the player has to play the arcade game as well as how many prizes he has won from the game.
 
-The Lego EV3 brick has been built and the CH an intepreter has been downladed to programme the EV3 brick to receive inputs and move accordingly using a rasberry pi computer that connects to it through bluetooth. 
-
-The game has been developed on the Lego brick although not fully tested as the physical built has not been finalised but a mock built works. However, we have yet to connect the program from the rasberry pi computer to the users computer with the lucky strike app
-
-We used python sockets to connect a computer with the lucky strike app with the server computer with the webcam to the physical game and also the code which runs the game through an ev3 brick by bluetooth 
-
-The client computer (with the app) just sends 2 messages to the host. When to start the game which intitiates the ev3 brick program and when to stop the car to hit the "target". (We have yet to establish this connection). The server computer then sends if the client has won and awards the player with a small or big prize
-
-Problems:
-The socket conneciton was very difficult as different website had different socket codes and connection by hostname seem not to work only connection by host ip address which had to be identified through the terminal
-Initially the ev3 brick was meant to be codded in python using micropython created by the ev3dev team. Although it can be codded, inputs could not be sent to the programme or we could not find a way to send it. After awhile we read up and decided to use ch c C/C++ an intepreter on a linux os so that we can send inputs to our ev3 brick on when to stop the car to hit the "target".
-the lego build for our car was also tricky as we wanted a 4 wheel drive but after realising that with four wheels the movements might have a larger error margin, preventing the car from starting of at the same position, we decided to use a 3 wheel drive where it would be easier.
-To make the game more skill based, we have also decided to randomise the speed of the car so it depends if player can time the button better to be more accurate. 
-
-**Due to the problems we decided to scrap the Hardware and change it to a digital game**
-
-Revamp:
-A similar game has been created digitlaly using pygame module
-The code interacts with the sql database changing the players prizes
-
-**Features Developed in Milestone 3:**
-
-1. Created the Game which works and just has a simple button. The movement of the car is also random making it more skill based
-2. Interacted the game with our preexisiting gui so that it runs smoothly 
-
-**Potential Features to develop**
-1. Putting the server online so that everyone can access the game and challenge each other 
-2. Allowing users to convert their winning to cutomisations available
+Link to the youtube videos found here: 
+https://youtu.be/St4c4Y3Luhg
 
 
